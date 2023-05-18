@@ -1,5 +1,5 @@
     // Initial variables and source code.
-var generateBtn = document.querySelector("#generate");
+  var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
   var password = generatePassword();
@@ -9,7 +9,7 @@ function writePassword() {
 
 }
 
-generateBtn.addEventListener("click", writePassword);
+  generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   var passwordLength = prompt("Please enter the desired password length (between 8 and 128 characters):");
@@ -33,3 +33,9 @@ function generatePassword() {
     includeSpecial = confirm("Do you want to include special characters?");
   }
 }
+
+   // Defined character types.
+   var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+   var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   var numericChars = "0123456789";
+   var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
