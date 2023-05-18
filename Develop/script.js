@@ -22,4 +22,14 @@ function generatePassword() {
   var includeLowercase = confirm("Do you want to include lowercase characters?");
   var includeUppercase = confirm("Do you want to include uppercase characters?");
   var includeNumeric = confirm("Do you want to include numeric characters?");
-  var includeSpecial = confirm("Do you want to include special characters?"); }
+  var includeSpecial = confirm("Do you want to include special characters?"); 
+
+    // Check if at least one character type is selected
+  while (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
+    alert("You must select at least one character type!");
+    includeLowercase = confirm("Do you want to include lowercase characters?");
+    includeUppercase = confirm("Do you want to include uppercase characters?");
+    includeNumeric = confirm("Do you want to include numeric characters?");
+    includeSpecial = confirm("Do you want to include special characters?");
+  }
+}
