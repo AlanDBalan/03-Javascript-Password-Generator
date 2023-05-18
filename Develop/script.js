@@ -58,3 +58,11 @@ function generatePassword() {
   if (includeSpecial) {
     availableChars += specialChars;
   }
+
+  for (var i = 0; i < passwordLength; i++) {
+    var randomPassword = Math.floor(Math.random() * availableChars.length);
+    password += availableChars[randomPassword];
+  }
+  
+  return password;
+}
