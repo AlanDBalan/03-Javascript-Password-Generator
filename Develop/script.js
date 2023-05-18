@@ -18,3 +18,8 @@ function generatePassword() {
   while (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt("Invalid length. Please enter a password length between 8 and 128 characters:");
   }
+    // Character types.
+  var includeLowercase = confirm("Do you want to include lowercase characters?");
+  var includeUppercase = confirm("Do you want to include uppercase characters?");
+  var includeNumeric = confirm("Do you want to include numeric characters?");
+  var includeSpecial = confirm("Do you want to include special characters?"); }
