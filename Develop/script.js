@@ -32,10 +32,29 @@ function generatePassword() {
     includeNumeric = confirm("Do you want to include numeric characters?");
     includeSpecial = confirm("Do you want to include special characters?");
   }
-}
-
+  
    // Defined character types.
    var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
    var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    var numericChars = "0123456789";
    var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+
+   // Random Password
+   var password = ""
+   var availableChars = ""
+
+   if (includeLowercase) {
+    availableChars += lowercaseChars;
+  }
+  
+  if (includeUppercase) {
+    availableChars += uppercaseChars;
+  }
+  
+  if (includeNumeric) {
+    availableChars += numericChars;
+  }
+  
+  if (includeSpecial) {
+    availableChars += specialChars;
+  }
