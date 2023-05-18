@@ -40,7 +40,7 @@ function generatePassword() {
    var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
    // Random Password
-   var password = ""
+   var passwordStart = ""
    var availableChars = ""
 
    if (includeLowercase) {
@@ -59,10 +59,10 @@ function generatePassword() {
     availableChars += specialChars;
   }
 
-  for (var i = 0; i < passwordLength; i++) {
-    var randomPassword = Math.floor(Math.random() * availableChars.length);
-    password += availableChars[randomPassword];
+   for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * availableChars.length);
+    passwordStart += availableChars[randomIndex];
   }
   
-  return password;
+  return passwordStart;
 }
