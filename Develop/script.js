@@ -40,8 +40,8 @@ function generatePassword() {
    var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
    // Random Password
-   var passwordStart = ""
-   var availableChars = ""
+   var passwordStart = "";
+   var availableChars = "";
 
    if (includeLowercase) {
     availableChars += lowercaseChars;
